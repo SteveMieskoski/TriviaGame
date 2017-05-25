@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<div class="container display-body display-border">
+  <div class="text-screen">
+    <div class="timer-bar ">
+      <i class="fa fa-signal icon pull-left" aria-hidden="true"></i>
+      <span class="time">00:00</span>
+      <i class="fa fa-battery-half fa-fw icon pull-right " aria-hidden="true"></i>
+    </div>
+    <div class="row ">
+      <div class="col-lg-8 col-sm-12 col-xs-12 col-md-10 col-lg-offset-2 col-md-offset-1 main-text">
+
+        <section id="game-end-top" class="hide-elem">
+          <h3>Game Over!</h3>
+          <p>Correct&nbsp;<span id="wins">0</span>&nbsp;&nbsp;Incorrect&nbsp;<span id="losses">0</span></p>
+          <br>
+        </section>
+        <section id="start-page">
+          <h3>Ready for some Trivia!!!</h3>
+          <h5>Click the Home button to begin </h5>
+        </section>
+
+        <section id="main-game" class="hide-elem">
+
+          <section id="game" >
+            <p class="countdown-text"><span id="countDown">5</span> seconds to answer</p>
+            <h3 class="question"></h3>
+
+            <div id="answer"></div>
+          </section>
+
+          <section id="correct" class="hide-elem">
+            <h2>That's Correct!</h2>
+            <p class="countdown-text">Questions Remaining: <span class="to-go">5</span></p>
+            <p class="countdown-text">Next Question In: <span class="countDown">5</span> seconds!</p>
+          </section>
+
+          <section id="incorrect" class="hide-elem">
+            <h3>Sorry that is incorrect</h3>
+            <p class="countdown-text">Questions Remaining: <span class="to-go">5</span></p>
+            <p class="countdown-text">Next Question In: <span class="countDown">5</span> seconds!</p>
+            <h3 class="question"></h3>
+            <h4>The correct answer is: <br> <span class="correct-answer"></span></h4>
+
+          </section>
+
+          <section id="timeout" class="hide-elem">
+            <h3>Time's Up!</h3>
+            <p class="countdown-text">Questions Remaining: <span class="to-go">5</span></p>
+            <p class="countdown-text">Next Question In: <span class="countDown">5</span> seconds!</p>
+            <h3 class="question"></h3>
+            <h4>The correct answer is: <br><span class="correct-answer"></span></h4>
+          </section>
+        </section>
+
+
+        <section id="game-end-bottom" class="hide-elem">
+          <br>
+          <h4 id="playAgain"> Click the Home button to  play again</h4>
+        </section>
+      </div>
+
+
+    </div>
+  </div>
+  <div id="apple-button" class="apple-button">
+    <div class="round-square"></div>
+    <div id="play-again-label" class="hide-elem">
+      <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+      Click The Apple Button to Play Again!
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="assets/javascript/app.js"></script>
+</body>
+</html>

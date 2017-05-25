@@ -1,0 +1,118 @@
+
+
+.hide-elem{
+    display: none;
+}
+
+
+.display-body{
+    position: relative;
+    margin-top: 5%;
+    padding: 10px 10px 50px 10px;
+    height: 100%;
+    min-height: 600px;
+    width: 100%;
+    max-width: 400px;
+     background-color: black;
+    border-radius: 20px;
+    border: 2px solid #beb9af;
+    box-shadow: -7px -5px 20px 1px rgba(4, 4, 4, 0.68), inset -1px -5px 20px 1px #858076;
+    color: white;
+}
+
+.display-border{
+    position: relative;
+    height: 100%;
+    min-height: 600px;
+    width: 100%;
+    max-width: 400px;
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid #beb9af;
+}
+
+.apple-button{
+    position: absolute;
+    bottom: 20px;
+    right: 46%;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: 2px solid #beb9af;
+    box-shadow: -7px -5px 2px 1px rgba(4, 4, 4, 0.68), inset -1px -3px 10px 1px #858076;
+}
+
+#play-again-label{
+    position: absolute;
+    right: -210px;
+    width: 200px;
+    z-index: 2;
+    color: white;
+}
+
+
+.round-square{
+    position: absolute;
+    bottom: 33%;
+    right: 33%;
+    height: 33%;
+    width: 33%;
+    border: 1px solid #9d9d9d;
+    border-radius: 2px;
+}
+
+.timer-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    font-size: 9px;
+    text-align: center;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 3px;
+    background: rgba(0, 0, 0, 0.39);
+    color: rgba(255, 255, 255, 0.47);
+}
+
+.icon{
+    color: rgba(255, 255, 255, 0.47);
+}
+
+
+
+.text-screen{
+    position: relative;
+    margin: 15px;
+    padding: 15px;
+    border-width: 1px;
+    border-color: #000000;
+    border-style: solid;
+    height: 100%;
+    min-height: 500px;
+    background: url(../images/ios-8-wallpaper-default.jpg) ;
+}
+
+#game-end-top{
+    margin-top: 30px;
+}
+
+.main-text{
+    text-align: center;
+}
+.activeAns{
+    border-radius: 5px;
+    background: rgba(162, 162, 162, 0.71);
+}
+
+.activeAns:hover{
+    border-radius: 5px;
+    background: #a2a2a2;
+}
+
+@media screen and (max-width: 768px) {
+    .display-body{
+        max-width: 80%;
+    }
+}
